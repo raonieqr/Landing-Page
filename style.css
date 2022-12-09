@@ -1,3 +1,7 @@
+:root{
+    --landing-detail: #FFC90A;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -9,7 +13,7 @@ body{
 }
 
 #header{
-    background-color: rgba(252, 252, 252);
+    background-color: rgb(98, 98, 98);
     padding: 0 20px;
     display: flex;
     min-height: 75px;
@@ -43,11 +47,11 @@ body{
  margin: 10px 20px;
  flex-direction: colum;
  text-decoration: none;
- color: rgba(73, 70, 70, 0.87);
+ color: rgb(255, 255, 255, 87%);
 }
 
 #nav-bar .nav-link:hover{
-    color: #FFC90A;
+    color: var(--landing-detail);
 }
 
 main{
@@ -86,7 +90,7 @@ main label{
 
 #form [type="submit"]{
     display: flex;
-    background-color: #FFC90A;
+    background-color: var(--landing-detail);
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -97,4 +101,47 @@ main label{
     font-weight: 600;
     border: none;
     border-radius: 5px;
+}
+
+#form [type="submit"]:hover{
+    cursor:pointer;
+    background-color: var(--landing-detail);
+    border: 1px solid black;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+}
+
+#info-grid img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: -5px;
+}
+
+.info-product{
+    display: flex;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+.sub-info{
+    margin-bottom: 30px;
+}
+
+#video-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video{
+    margin: 30px;
+    width: 660px;
+    height: 400px;
 }
